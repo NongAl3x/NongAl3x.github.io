@@ -12,7 +12,9 @@ body{
 
 img{
     display: block;
-    margin: 10px auto;
+    margin: auto;
+    margin-top: 10px;
+    margin-bottom: 10px ;
 }
 
 p{
@@ -24,11 +26,13 @@ p{
     border: 4px dotted red;
 
 }
+.head{
+    font-size: 18px;
+}
 #heading{
     color: blue;
     font-size: 18;
 }
-
 h1{
     font-size: 60px;
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
