@@ -1,0 +1,78 @@
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            margin: 0 auto;
+            background-color: #CDF0EA;
+            padding: 0 20px 20px 20px;
+            border: 5px solid #FAF4B7;
+            width: fit-content;
+        }
+
+        img {
+            display: block;
+            margin: auto;
+        }
+        h1, h2{
+            text-align: center;
+        }
+        #hint{
+            text-align: left;
+        }
+
+    </style>
+    <meta charset="utf-8">
+    <title>lab4 problem1 page</title>
+</head>
+
+<body>
+    <script>
+        let newArray = []
+        let primeArray = []
+
+        function primeNumber(n) {
+            for (let i = 0; i <= n; i++) {
+                newArray.push(i)
+            } for (primeNum of newArray) {
+                let i;
+                for (i = 2; i < primeNum; i++) {
+                    if (primeNum % i == 0) {
+                        break
+                    }
+                }
+                if (i == primeNum) {
+                    console.log(i)
+                    primeArray.push(primeNum)
+                }
+            }
+        }
+
+        while (true) {
+            var numInput = Number(prompt("enter the positive integer :"));
+            if (numInput >>> 0 === parseFloat(numInput)) {
+                primeNumber(numInput);
+                alert("For n = " + numInput + " Prime number are :" + primeArray);
+                break;
+            }
+        }
+
+
+    </script>
+    <h1>Prime number finder!</h1>
+    <h2>Write the web app to prompt accepting for a positive integer number</h2>
+    <ul style="list-style-type:circle">
+        <li>If the entered text is not a positive integer number, then the web app will keep asking for a number until
+            the valid positive integer is entered</li>
+        <li>If the entered text is a positive integer, then the app will print prime numbers that are not greater than
+            that given positive integer</li>
+    </ul>
+    <h2 id="hint">Hint: </h2>
+    <ol type="1">
+        <li>You may want to use loop with label </li>
+        <li>You may want to use array with push function</li>
+    </ol>
+</body>
+
+</html>
